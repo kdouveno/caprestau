@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "thinFont";
+  src: url("./uni.woff") format("font/woff");
+}
+
+body {
+  margin: 0;
+  --band-width: 200px;
+  --c1: rgb(70, 70, 70);
+  --c2: rgb(255, 255, 255);
+  --ease-out-back: cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+}
+
+#container > div {
+  height: 100vh;
+  float: left;
+}
+
+.tag {
+  border: 1px solid var(--c1);
+  margin: 1px;
+  padding: 0px 0.5em;
+  font-size: .8em;
+  cursor: pointer;
+}
+
+#filter .tag {
+  border-color: var(--c2);
+  color: var(--c2);
+  -webkit-transition: -webkit-transform 0.5s var(--ease-out-back);
+  transition: -webkit-transform 0.5s var(--ease-out-back);
+  transition: transform 0.5s var(--ease-out-back);
+  transition: transform 0.5s var(--ease-out-back), -webkit-transform 0.5s var(--ease-out-back);
+}
+
+#filter .tag:hover {
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
+}
+
+#filter .tag.c1 {
+  color: var(--c1);
+  background-color: var(--c2);
+}
+
+#filter .tag.c2 {
+  opacity: .5;
+  text-decoration: line-through;
+}
+
+#filter > div {
+  width: var(--band-width);
+  height: 100vh;
+  background-color: var(--c1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--c2);
+}
+
+#filter > div h3 {
+  border-bottom: 1px solid var(--c2);
+}
+
+#filter > div input[type=search] {
+  height: 26px;
+  margin: 10px;
+  border-radius: 13px;
+  border: 0px;
+  outline: 0px !important;
+  padding: 8px;
+}
+
+#filter > div button {
+  margin: auto;
+}
+
+#filter > div span {
+  white-space: nowrap;
+}
+
+#filter > div hr {
+  width: 90%;
+  margin: 0px auto;
+}
+
+#filter > div #types {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#filter > div #tags {
+  overflow-y: scroll;
+  padding: 10px;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hideScrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+#cocktails {
+  width: calc(100vw - var(--band-width));
+  color: var(--c1);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#cocktails h2 {
+  font-weight: lighter;
+  margin: 5px;
+}
+
+#cocktails .ckt {
+  padding: 20px;
+  -webkit-transition: -webkit-box-shadow 0.2s var(--ease-out-back);
+  transition: -webkit-box-shadow 0.2s var(--ease-out-back);
+  transition: box-shadow 0.2s var(--ease-out-back);
+  transition: box-shadow 0.2s var(--ease-out-back), -webkit-box-shadow 0.2s var(--ease-out-back);
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  cursor: pointer;
+}
+
+#cocktails .ckt:hover {
+  -webkit-box-shadow: -5px -5px 15px 0px rgba(0, 0, 0, 0.58);
+          box-shadow: -5px -5px 15px 0px rgba(0, 0, 0, 0.58);
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+}
+
+#cocktails .ckt .ckt_info {
+  height: 120px;
+  border-radius: 1px;
+  font-size: .8em;
+}
+
+#cocktails .ckt .ckt_info img {
+  height: 100%;
+  width: 120px;
+  float: left;
+}
+
+#cocktails .ckt .ckt_info .ckt_tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  float: left;
+  height: 100%;
+  margin-right: 5px;
+}
+
+#cocktails .ckt .ckt_info .ckt_des {
+  height: 100%;
+  margin: 5px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#view {
+  --view-margin: 10px;
+  --max-width: 400px;
+  width: calc(100vw - var(--band-width));
+  background-color: var(--c1);
+  color: var(--c2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px solid var(--c2);
+  position: absolute;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  font-weight: lighter;
+  overflow-x: scroll;
+  -webkit-transition: -webkit-transform 0.5s var(--ease-out-back);
+  transition: -webkit-transform 0.5s var(--ease-out-back);
+  transition: transform 0.5s var(--ease-out-back);
+  transition: transform 0.5s var(--ease-out-back), -webkit-transform 0.5s var(--ease-out-back);
+}
+
+#view * {
+  margin: var(--view-margin);
+}
+
+#view.show {
+  -webkit-transform: translateX(var(--band-width));
+          transform: translateX(var(--band-width));
+}
+
+#view #flex_container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: calc(100vh - 80px);
+}
+
+#view #flex_container > * > *:nth-child(2) {
+  border-top: 1px solid var(--c2);
+  padding-top: var(--view-margin);
+}
+
+#view h1 {
+  border-bottom: 1px solid var(--c2);
+  padding-bottom: var(--view-margin);
+}
+
+#view .cross {
+  cursor: pointer;
+}
+
+#view h2, #view h3, #view h4, #view h5, #view h6 {
+  display: inline-block;
+}
+
+#view #description {
+  max-width: var(--max-width);
+}
+
+#view #composition #ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#view #composition #ingredients #graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid var(--c2);
+  border-top-width: 0px;
+  border-radius: 3px 3px 25% 25%;
+  overflow: hidden;
+  min-height: 150px;
+  margin: 10px;
+}
+
+#view #composition #ingredients #graph .graphPiece {
+  margin: 1px 0px 0px 0px;
+  width: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#view #composition #ingredients #graph .graphPiece:first-child {
+  height: 10px;
+  border-bottom: 1px dashed var(--c2);
+}
+
+#view #composition #ingredients span {
+  font-weight: bolder;
+}
+
+#view #materiel > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#view #materiel img {
+  height: 150px;
+}
+
+#view #steps {
+  max-width: var(--max-width);
+}
+
+#view #steps ul {
+  list-style: upper-roman;
+}
+/*# sourceMappingURL=style.css.map */

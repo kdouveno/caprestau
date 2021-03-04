@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54 60" version="1.1"
+	x="0px" y="0px">
+	<title>37 -Cocktail Glass- (Outline)</title>
+	<desc>Created with Sketch.</desc>
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-843.000000, -687.000000)" fill="#000000">
+			<g transform="translate(843.000000, 687.000000)">
+				<path
+					d="M37.0059,56.0425 L37.0169,56.0425 L37.0059,56.0425 Z M26.9999,54.0005 C20.9569,54.0005 17.2739,55.3295 16.9939,56.0425 C17.2739,56.6705 20.9569,58.0005 26.9999,58.0005 C32.9259,58.0005 36.5819,56.7215 36.9859,56.0005 C36.5819,55.2785 32.9259,54.0005 26.9999,54.0005 L26.9999,54.0005 Z M26.9999,60.0005 C22.5429,60.0005 14.9999,59.1575 14.9999,56.0005 C14.9999,52.8425 22.5429,52.0005 26.9999,52.0005 C31.4569,52.0005 38.9999,52.8425 38.9999,56.0005 C38.9999,59.1575 31.4569,60.0005 26.9999,60.0005 L26.9999,60.0005 Z" />
+				<path
+					d="M52.0312,5.1426 L52.0422,5.1426 L52.0312,5.1426 Z M2.0902,4.9996 C3.4622,6.2746 12.6882,7.9996 27.0002,7.9996 C41.3112,7.9996 50.5382,6.2746 51.9102,4.9996 C50.5382,3.7256 41.3112,1.9996 27.0002,1.9996 C12.6882,1.9996 3.4622,3.7256 2.0902,4.9996 L2.0902,4.9996 Z M27.0002,9.9996 C24.2362,9.9996 0.0002,9.8596 0.0002,4.9996 C0.0002,0.1406 24.2362,-0.0004 27.0002,-0.0004 C29.7632,-0.0004 54.0002,0.1406 54.0002,4.9996 C54.0002,9.8596 29.7632,9.9996 27.0002,9.9996 L27.0002,9.9996 Z" />
+				<path
+					d="M27,57 C26.447,57 26,56.552 26,56 L26,23 C26,22.448 26.447,22 27,22 C27.553,22 28,22.448 28,23 L28,56 C28,56.552 27.553,57 27,57" />
+				<path
+					d="M27,24.0132 C23.812,24.0132 20.622,22.9122 18.021,20.7112 L2.024,7.1742 C1.603,6.8182 1.55,6.1872 1.906,5.7652 C2.264,5.3442 2.894,5.2902 3.315,5.6482 L19.313,19.1842 C23.768,22.9532 30.232,22.9532 34.687,19.1842 L50.685,5.6482 C51.106,5.2902 51.737,5.3442 52.094,5.7652 C52.45,6.1872 52.397,6.8182 51.976,7.1742 L35.979,20.7112 C33.378,22.9122 30.188,24.0132 27,24.0132" />
+			</g>
+		</g>
+	</g>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>
