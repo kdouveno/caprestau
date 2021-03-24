@@ -97,6 +97,26 @@ cocklib = {
 		],
 		description: "Le cocktail Sex on the beach, au nom évocateur, nous vient des Etats-Unis. Il a été créé et rendu célèbre par la chaîne de restaurants américaines TGI Friday. Il est toujours servi dans un grand verre tulipe et est caractérisé par ses belles couleurs vives orange et rouge et on le déguste bien frais avec une paille."
 	},
+	"Under the Palm Trees":{
+		tags:[
+			["jus de cramberry", "50 ml"],
+			["jus d'orange", "50 ml"],
+			["passoa", "10 ml"],
+			["sirop de grenadine", "10 ml"],
+			["vodka", "40 ml"],
+			["quartier d'orange", "1"],
+			["glace"],
+			["shaker"],
+			["tulipe"],
+		],
+		steps: [
+			"Versez tous les ingrédients dans votre shaker.",
+			"Shakez pendant 10 secondes.",
+			"Filtrez le cocktail dans votre verre highball rempli de glace.",
+			"Ajoutez une paille et décorez."
+		],
+		description: "Création: Sex on the beach revisité."
+	},
 	"screwdriver":{
 		tags:[
 			["jus d'orange", "100 ml"],
