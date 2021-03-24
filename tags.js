@@ -18,6 +18,8 @@ taglib = {
 		"blanc d'oeuf":             {type: 0, color: "#ffffff"},
 		"sirop de sucre":           {type: 0, color: "#ebe7d3"},
 		"liqueur de chambord":		{type: 0, color: "#fc031c"},
+		"sirop de grenadine":	{type: 0, color: #eb344f},
+		"passoa": {type: 0, color: #eb6834},
 		
 		"zeste de citron jaune" :   {type: 1},
 		"tranche de citron jaune" : {type: 1},
